@@ -1,0 +1,172 @@
+:root{
+    --main-bg: hsl(217, 45%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --soft-b: hsl(215, 50%, 70%);
+    --white: hsl(0, 0%, 100%);  
+    --hover: hsl( 178, 100%, 50%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    line-height: 1.4;
+    font-family: 'Outfit', sans-serif ;
+    background: var(--main-bg);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    background: var(--card-bg);
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    box-shadow: 1px 7px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.image-con{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.eq{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--hover);
+    border-radius: 0.8rem;
+    opacity: 0;
+}
+
+.eye{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    align-items: center;
+    display: none;
+}
+
+.image-con:hover .overlay{
+    cursor: pointer;
+    opacity: 0.4
+}
+
+.image-con:hover .overlay + .eye{
+    display: block;
+}
+
+h1{
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: var(--hover);
+}
+
+.JW:hover{
+    color: var(--hover);
+}
+
+.attr a:hover{
+    color: var(--hover);
+}
+
+h3{
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+    color: var(--soft-b);
+}
+
+.flexy{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eth{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    color: var(--hover);
+}
+
+
+.clk{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    color: var(--soft-b);
+}
+
+hr{
+    border: none;
+    height: 1px;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    background: var(--line);
+}
+
+.avi{
+    height: 50px;
+    max-width: 50px;
+    padding-top: 0.5rem;
+}
+
+.avwr{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avtx{
+    color: var(--soft-b);
+    font-weight: 400;
+}
+
+.avtx a{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.attr a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.attr{
+    padding-top: 2.2rem;
+    font-weight: 300;
+    color:var(--soft-b);
+}
